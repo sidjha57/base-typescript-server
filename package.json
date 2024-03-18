@@ -25,7 +25,7 @@
     "dev:tsc": "tsc --watch --preserveWatchOutput",
     "dev:node": "node --watch dist/index.js",
     "dev:esbuild": "npm run build --watch",
-    "dev": "run-p dev:*",
+    "dev": "esrun --watch src/index.ts",
     "start": "node dist/index.js",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix --max-warnings=0",
@@ -61,6 +61,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-sonarjs": "^0.24.0",
+    "esrun": "^3.2.26",
     "husky": "8.0.3",
     "jest": "^29.7.0",
     "lint-staged": "15.2.2",
@@ -68,5 +69,8 @@
     "prettier": "3.2.5",
     "ts-jest": "^29.1.2",
     "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "tslog": "^4.9.2"
   }
 }
